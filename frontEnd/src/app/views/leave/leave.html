@@ -1,0 +1,13 @@
+<div class="leave-space uk-grid">
+    <div class="uk-height-1-1 uk-width-2-10">
+        <ul class="uk-tab uk-tab-left uk-height-1-1" data-uk-tab>
+            <li ng-repeat="action in leaveActions track by $index" ng-class="{true: 'uk-active'}[currentActive === action.type]">
+                <a ng-click="triggerActions($event, action.type)">{{action.name}}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="uk-height-1-1 uk-width-8-10">
+        <ng-include ng-if="currentActive === 'leaveForm'" src="'views/leave/leave-form.html'" ></ng-include>
+        <ng-include ng-if="currentActive === 'records'" src="'views/leave/records.html'" ></ng-include>
+    </div>
+</div>

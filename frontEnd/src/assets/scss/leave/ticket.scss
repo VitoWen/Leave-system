@@ -1,0 +1,65 @@
+.ticket-space {
+    margin-top: 30px;
+    .uk-form-row {
+        height: 70px;
+        line-height: 2.2em;
+    }
+    .uk-form-controls {
+        position: relative;
+    }
+    .panel {
+        width: 130px;
+        height: 32px !important;
+        padding-left: 5px;
+        display: inline-block;
+        background: rgba(0, 168, 230, 0.2) !important;
+        border-radius: 5px;
+    }
+    .red-start{
+        color: red;
+        font-size: 15px;
+    }
+    .info-panel {
+        background: rgba(115, 217, 255, 0.2) !important;
+    }
+    .click-panel {
+        border-radius: 5px 0 0 5px !important;
+        border: 0px !important;
+    }
+    .warning {
+        position: absolute;
+        top: 0px;
+        left: 5px;
+        color: red;
+        line-height: 2.3em;
+    }
+    .down-btn {
+        position: absolute;
+        width: 30px;
+        height: 32px;
+        font-size: 20px;
+        border-radius: 0px 5px 5px 0px;
+        background: rgba(0, 168, 230, 0.2);
+        .icon-down {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .icon-calendar {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .ui-timepicker-div {
+        .ui_tpicker_hour, .ui_tpicker_minute {
+            padding: 10px 0px 0 0px;
+        }
+    }
+}
+
+textarea {
+    resize: none;
+}
